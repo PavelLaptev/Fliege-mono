@@ -1,0 +1,15 @@
+@import './fonts.css';
+
+:root {
+	--bg-color: #e3e2da;
+	--text-color: #222;
+}
+
+body {
+	font-family: 'Fliege mono', monospace;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	background-color: var(--bg-color);
+	padding: 0 100px;
+	color: var(--text-color);
+}
