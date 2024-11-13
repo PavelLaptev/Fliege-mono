@@ -39,7 +39,7 @@
 <style>
 	.weight-presentation {
 		display: flex;
-		gap: 40px;
+		gap: 80px;
 		padding-bottom: 80px;
 	}
 

@@ -1,5 +1,5 @@
 <section class="font-layout">
-	<img src="assets/font-layout-preview.svg" alt="Font Layout" />
+	<img class="font-layout-image" src="assets/font-layout-preview.svg" alt="Font Layout" />
 </section>
 
 <style>
@@ -8,7 +8,11 @@
 		flex-direction: column;
 		justify-content: space-between;
 		font-size: 16px;
-		padding: 60px 0;
-		height: calc(100vh - 140px);
+		padding: 60px 0 120px;
+	}
+
+	.font-layout-image {
+		width: 100%;
+		mix-blend-mode: multiply;
 	}
 </style>

@@ -13,3 +13,9 @@ body {
 	padding: 0 100px;
 	color: var(--text-color);
 }
+
+/* selection */
+::selection {
+	background-color: #DCF9F5;
+	color: #222;
+}
