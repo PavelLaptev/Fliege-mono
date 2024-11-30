@@ -5,6 +5,7 @@
 	import FontLayout from '$lib/sections/FontLayout.svelte';
 	import TryItOut from '$lib/sections/TryItOut.svelte';
 	import Symbols from '$lib/sections/Symbols.svelte';
+	import Posters from '$lib/sections/Posters.svelte';
 </script>
 
 <main class="page-wrapper">
@@ -13,6 +14,7 @@
 	<FontLayout />
 	<TryItOut />
 	<Symbols />
+	<Posters />
 </main>
 
 <style>

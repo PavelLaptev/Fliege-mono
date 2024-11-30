@@ -39,6 +39,7 @@
 		font-size: 16px;
 		padding: 60px 0;
 		height: calc(100vh - 140px);
+		max-height: 1000px;
 	}
 	.hero-top {
 		display: flex;
