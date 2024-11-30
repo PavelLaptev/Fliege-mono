@@ -15,4 +15,18 @@
 		width: 100%;
 		mix-blend-mode: multiply;
 	}
+
+	/* MEDIUM SCREENS */
+	@media (max-width: 1200px) {
+		.font-layout {
+			padding: 40px 0 80px;
+		}
+	}
+
+	/* SMALL SCREENS */
+	@media (max-width: 800px) {
+		.font-layout {
+			padding: 20px 0 40px;
+		}
+	}
 </style>

@@ -64,4 +64,15 @@
 		border: 0;
 		border-top: 1px dashed var(--text-color);
 	}
+
+	/* SMALL SCREENS */
+	@media (max-width: 800px) {
+		.symbols {
+			padding: 20px 0 40px;
+		}
+
+		.symbol {
+			font-size: 20px;
+		}
+	}
 </style>

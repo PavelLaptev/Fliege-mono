@@ -4,9 +4,23 @@
 	let weightNumber = $state(400);
 	let fontSize = $state(130);
 	let letterSpacing = $state(-0.7);
+
+	let containerWidth = $state(0);
+
+	$effect(() => {
+		if (containerWidth < 800) {
+			fontSize = 50;
+			weightNumber = 400;
+			letterSpacing = -0.7;
+		} else {
+			fontSize = 130;
+			weightNumber = 400;
+			letterSpacing = -0.7;
+		}
+	});
 </script>
 
-<section class="try-it-out">
+<section class="try-it-out" bind:clientWidth={containerWidth}>
 	<div class="controls">
 		<RangeSlider label="Font size" bind:value={fontSize} min={12} max={200} />
 		<RangeSlider label="Font weight" bind:value={weightNumber} min={100} max={900} step={10} />
@@ -42,5 +56,17 @@
 
 	.text-preview:focus {
 		outline: none;
+	}
+
+	/* SMALL SCREENS */
+	@media (max-width: 800px) {
+		.try-it-out {
+			padding: 20px 0;
+		}
+
+		.controls {
+			flex-direction: column;
+			gap: 20px;
+		}
 	}
 </style>

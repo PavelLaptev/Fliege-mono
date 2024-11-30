@@ -85,4 +85,11 @@
 		border-radius: 50%;
 		background-color: var(--text-color);
 	}
+
+	/* SMALL SCREENS */
+	@media (max-width: 800px) {
+		.slider {
+			max-width: 100%;
+		}
+	}
 </style>

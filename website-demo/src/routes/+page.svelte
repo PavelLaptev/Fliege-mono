@@ -23,5 +23,20 @@
 		flex-direction: column;
 		max-width: 1400px;
 		margin: 0 auto;
+		padding: 0 80px;
+	}
+
+	/* MEDIUM SCREENS */
+	@media (max-width: 1200px) {
+		.page-wrapper {
+			padding: 0 40px;
+		}
+	}
+
+	/* SMALL SCREENS */
+	@media (max-width: 800px) {
+		.page-wrapper {
+			padding: 0 20px;
+		}
 	}
 </style>
