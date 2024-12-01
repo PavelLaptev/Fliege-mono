@@ -16,9 +16,11 @@ jobs:
           node-version: '20.9.0'  # Use whatever node version your project requires
 
       - name: Install Dependencies
+        working-directory: ./website-demo
         run: yarn install
 
       - name: Build Project
+        working-directory: ./website-demo
         run: yarn build  # Use the correct build command for your project. It may include 'dist' as part of the script in your package.json.
       - name: Build and Deploy
         uses: JamesIves/github-pages-deploy-action@v4.4.3
