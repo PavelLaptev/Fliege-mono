@@ -8,8 +8,6 @@
 	}
 
 	let { label, value = $bindable(), min = 100, max = 900, step = 1 }: Props = $props();
-
-	console.log({ label, value });
 </script>
 
 <div class="slider">
