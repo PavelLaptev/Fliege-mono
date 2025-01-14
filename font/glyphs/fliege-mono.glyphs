@@ -2,8 +2,12 @@
 .appVersion = "3306";
 .formatVersion = 3;
 DisplayStrings = (
-"฿",
-$
+"↗",
+"ӝ",
+"ӟ",
+"ӥ",
+"ӧ",
+"ӵ"
 );
 axes = (
 {
@@ -41841,6 +41845,224 @@ width = 600;
 unicode = 1103;
 },
 {
+glyphname = "zhedieresis-cy";
+lastChange = "2025-01-14 00:47:04 +0000";
+layers = (
+{
+layerId = m003;
+shapes = (
+{
+ref = "zhe-cy";
+},
+{
+ref = dieresiscomb;
+}
+);
+width = 600;
+},
+{
+layerId = m004;
+shapes = (
+{
+ref = "zhe-cy";
+},
+{
+ref = dieresiscomb;
+}
+);
+width = 600;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = "zhe-cy";
+},
+{
+ref = dieresiscomb;
+}
+);
+width = 600;
+}
+);
+unicode = 1245;
+},
+{
+glyphname = "zedieresis-cy";
+lastChange = "2025-01-14 00:47:50 +0000";
+layers = (
+{
+layerId = m003;
+shapes = (
+{
+ref = "ze-cy";
+},
+{
+ref = dieresiscomb;
+}
+);
+width = 600;
+},
+{
+layerId = m004;
+shapes = (
+{
+ref = "ze-cy";
+},
+{
+ref = dieresiscomb;
+}
+);
+width = 600;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = "ze-cy";
+},
+{
+ref = dieresiscomb;
+}
+);
+width = 600;
+}
+);
+unicode = 1247;
+},
+{
+glyphname = "idieresis-cy";
+lastChange = "2025-01-14 00:48:15 +0000";
+layers = (
+{
+layerId = m003;
+shapes = (
+{
+ref = "ii-cy";
+},
+{
+pos = (-1,0);
+ref = dieresiscomb;
+}
+);
+width = 600;
+},
+{
+layerId = m004;
+shapes = (
+{
+ref = "ii-cy";
+},
+{
+pos = (-1,0);
+ref = dieresiscomb;
+}
+);
+width = 600;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = "ii-cy";
+},
+{
+pos = (-1,-22);
+ref = dieresiscomb;
+}
+);
+width = 600;
+}
+);
+unicode = 1253;
+},
+{
+glyphname = "odieresis-cy";
+lastChange = "2025-01-14 00:48:46 +0000";
+layers = (
+{
+layerId = m003;
+shapes = (
+{
+ref = "o-cy";
+},
+{
+ref = dieresiscomb;
+}
+);
+width = 600;
+},
+{
+layerId = m004;
+shapes = (
+{
+ref = "o-cy";
+},
+{
+ref = dieresiscomb;
+}
+);
+width = 600;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = "o-cy";
+},
+{
+ref = dieresiscomb;
+}
+);
+width = 600;
+}
+);
+unicode = 1255;
+},
+{
+glyphname = "chedieresis-cy";
+lastChange = "2025-01-14 00:52:06 +0000";
+layers = (
+{
+layerId = m003;
+shapes = (
+{
+ref = "che-cy";
+},
+{
+ref = dieresiscomb;
+}
+);
+width = 600;
+},
+{
+layerId = m004;
+shapes = (
+{
+ref = "che-cy";
+},
+{
+ref = dieresiscomb;
+}
+);
+width = 600;
+},
+{
+layerId = m002;
+shapes = (
+{
+ref = "che-cy";
+},
+{
+ref = dieresiscomb;
+}
+);
+width = 600;
+}
+);
+unicode = 1269;
+},
+{
 glyphname = zero;
 lastChange = "2024-10-25 17:41:14 +0000";
 layers = (
@@ -57792,5 +58014,5 @@ tH = "90";
 };
 };
 versionMajor = 0;
-versionMinor = 20;
+versionMinor = 100;
 }

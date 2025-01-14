@@ -19,7 +19,7 @@
 		<tbody>
 			<tr>
 				<td class="label">Glyphs</td>
-				<td>531</td>
+				<td>536</td>
 			</tr>
 			<tr>
 				<td class="label">Styles</td>
@@ -27,15 +27,16 @@
 			</tr>
 			<tr>
 				<td class="label">Alphabets</td>
-				<td>Ext.Latin, Cyrillic</td>
+				<td>Latin, Cyrillic</td>
 			</tr>
 		</tbody>
 	</table>
 
 	<p class="hero-description">
-		Fliege mono It is a free monospaced typeface with a strong personality. It is designed as a monospace
-		font but with a human touch. In order to make the font a bit more playful and less monotonous,
-		the font has ink traps and lowercase ascenders are slightly taller than uppercase cap height.
+		Fliege mono It is a free monospaced typeface with a strong personality. It is designed as a
+		monospace font but with a human touch. In order to make the font a bit more playful and less
+		monotonous, the font has ink traps and lowercase ascenders are slightly taller than uppercase
+		cap height.
 	</p>
 </section>
 
