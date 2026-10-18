@@ -4,27 +4,44 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+
+permissions:
+  contents: write # push the built site to gh-pages
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2 # This action checks out your repository
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '20.9.0'  # Use whatever node version your project requires
-
-      - name: Install Dependencies
+    defaults:
+      run:
         working-directory: ./website-demo
-        run: yarn install
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          cache-dependency-path: website-demo/pnpm-lock.yaml
+
+      # Install from the committed lockfile so CI never resolves newer deps
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
 
       - name: Build Project
-        working-directory: ./website-demo
-        run: yarn build  # Use the correct build command for your project. It may include 'dist' as part of the script in your package.json.
-      - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.4.3
+        run: pnpm build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: website-demo/build # The folder the action should deploy.
-          # You can specify additional configuration here as needed.
+          branch: gh-pages
+          folder: website-demo/build
