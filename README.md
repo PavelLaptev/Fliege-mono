@@ -13,9 +13,24 @@ Fliege mono It is a free monospaced typeface with a strong personality. It is de
 
 ![font preview](preview.png)
 
-Import the web package into css:
+## Web usage
+
+Load the font from the jsDelivr CDN:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PavelLaptev/Fliege-mono@1.0.2/css/fliege-mono.min.css">
+```
+
+Or import it in CSS:
 
 ```css
-@import "https://cdn.jsdelivr.net/gh/PavelLaptev/Fliege-mono@1.0.1/css/fliege-mono.min.css"
+@import url("https://cdn.jsdelivr.net/gh/PavelLaptev/Fliege-mono@1.0.2/css/fliege-mono.min.css");
 ```
-link: https://cdn.jsdelivr.net/gh/PavelLaptev/Fliege-mono@1.0.1/css/fliege-mono.min.css
+
+Then apply the font family:
+
+```css
+body {
+  font-family: 'FliegeMono', monospace;
+}
+```
