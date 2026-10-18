@@ -12,3 +12,10 @@ Fliege mono It is a free monospaced typeface with a strong personality. It is de
 ---
 
 ![font preview](preview.png)
+
+Import the web package into css:
+
+```css
+@import "https://cdn.jsdelivr.net/gh/PavelLaptev/Fliege-mono@1.0.1/css/fliege-mono.min.css"
+```
+link: https://cdn.jsdelivr.net/gh/PavelLaptev/Fliege-mono@1.0.1/css/fliege-mono.min.css
